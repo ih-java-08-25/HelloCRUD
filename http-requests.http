@@ -1,0 +1,25 @@
+###
+GET http://localhost:8080/greet
+
+<> 2025-09-16T185836.200.txt
+
+
+###
+
+GET http://localhost:8080/greet/name/Salva
+
+###
+
+GET http://localhost:8080/greet/manual?timeOfDay
+
+###
+
+GET http://localhost:8080/ramens
+
+###
+
+GET  http://localhost:8080/ramens/2
+
+###
+
+GET http://localhost:8080/ramens/ramen-of-the-day
