@@ -18,8 +18,42 @@ GET http://localhost:8080/ramens
 
 ###
 
-GET  http://localhost:8080/ramens/2
+GET  http://localhost:8080/ramens/1
 
 ###
 
 GET http://localhost:8080/ramens/ramen-of-the-day
+
+
+###
+POST http://localhost:8080/ramens
+Content-Type: application/json
+
+{
+  "brand": "Ironhack",
+  "flavor": "The best 2",
+  "spicyLevel": "NOT_SPICY"
+}
+
+###
+PUT http://localhost:8080/ramens/1
+Content-Type: application/json
+
+{
+  "brand": "Ironhack",
+  "flavor": "Modified",
+  "spicyLevel": "BURN_YOUR_TONGUE"
+}
+
+###
+PATCH http://localhost:8080/ramens/1/brand
+Content-Type: application/json
+
+{
+  "id": 1,
+  "brand": "Apple"
+}
+
+###
+
+DELETE http://localhost:8080/ramens/0

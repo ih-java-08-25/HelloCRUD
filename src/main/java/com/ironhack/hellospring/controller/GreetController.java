@@ -27,7 +27,7 @@ public class GreetController {
     }
 
     @GetMapping("manual")
-    public String manualGreet(@RequestParam(required = false) String timeOfDay) {
+    public String manualGreet(@RequestParam(required = false, defaultValue = "") String timeOfDay) {
         if (timeOfDay.equalsIgnoreCase("morning")) {
             return "Good morning";
         } else if (timeOfDay.equalsIgnoreCase("evening")) {
